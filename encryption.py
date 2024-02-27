@@ -14,7 +14,7 @@ while counter == 0:      #starting the loop
         code = input("Please enter your password ") #enter password
     
     elif choice == "d":     #choice decryption
-        code = input("Please enter your passwort")
+        code = input("Please enter your passwort ")
     
     else:   #choice closing program
         counter = counter + 1   #ending the loop
