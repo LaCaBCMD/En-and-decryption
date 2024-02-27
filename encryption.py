@@ -1,18 +1,28 @@
-### Program for encryption and decryption
+### Program for encryption and decryption of Texts
 ### Ask whether it should be encrypted or decrypted
 ### Program should be executed as a loop
 ### General structure of the programm
 
 counter = 0
+<<<<<<< HEAD
 disk1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 disk2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
 
 password_part2 = disk2[::2]
 print (disk2)
+=======
+disk1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
+         "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
+         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "!", "?"]
+
+disk2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
+         "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
+         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "]
+>>>>>>> Creating-the-lists
 
 while counter == 0:      #starting the loop
     
-    choice = input("encryption (e), decryption (d), close program (any key): ")
+    choice = input("encryption (e), decryption (d), close program (any key): ")  
 
     if choice == "e":  #choice encryption 
         code = int(input("Please enter your password ")) #enter password
