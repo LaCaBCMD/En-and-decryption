@@ -4,13 +4,7 @@
 ### General structure of the programm
 
 counter = 0
-<<<<<<< HEAD
-disk1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-disk2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
 
-password_part2 = disk2[::2]
-print (disk2)
-=======
 disk1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
          "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
          "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "!", "?"]
@@ -18,7 +12,8 @@ disk1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 disk2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
          "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
          "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "]
->>>>>>> Creating-the-lists
+password_part2 = disk2[::2]
+print (disk2)
 
 while counter == 0:      #starting the loop
     
