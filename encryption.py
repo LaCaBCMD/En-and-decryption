@@ -7,7 +7,7 @@ counter = 0
 
 disk1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
          "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
-         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "!", "?"]
+         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "]
 
 disk2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
          "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", 
@@ -21,7 +21,15 @@ while counter == 0:      #starting the loop
 
     if choice == "e":  #choice encryption 
         code = int(input("Please enter your password ")) #enter password
-    
+        text = list(str(input("Please enter the text you want to encrypt: ")))
+        for i in range(code):
+            disk1.append(disk1.pop(0))
+        for j in range(code^2):
+            disk2.append(disk2.pop(0))
+        
+        
+        
+
     elif choice == "d":     #choice decryption
         code = int(input("Please enter your passwort "))
     
