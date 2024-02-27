@@ -3,8 +3,10 @@
 ### Program should be executed as a loop
 ### General structure of the programm
 
-i = 0
-while i == 0:      #starting the loop
+counter = 0
+disk1 = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
+disk1 = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, ,]
+while counter == 0:      #starting the loop
     
     choice = input("encryption (e), decryption (d), close program (any key): ")
 
@@ -15,5 +17,5 @@ while i == 0:      #starting the loop
         code = input("Please enter your passwort")
     
     else:   #choice closing program
-        i = i + 1   #ending the loop
+        counter = counter + 1   #ending the loop
         print("Closing program ... ")
