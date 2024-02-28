@@ -18,8 +18,18 @@ while counter == 0:      #starting the loop
     choice = input("encryption (e), decryption (d), close program (any key): ")  
 
     if choice == "e":  #choice encryption 
+        encrypteven = []
+        encryptodd = []
         code = int(input("Please enter your password ")) #enter password
         text = list(str(input("Please enter the text you want to encrypt: ")))
+        textlenght = len(text)
+        for y in range(textlenght): #Dividing the text into two lists for better protection
+            if y % 2:
+                encrypteven.append(text(y))
+            else:
+                encryptodd.append(text(y))
+                
+                
         
         
         
