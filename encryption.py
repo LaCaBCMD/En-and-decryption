@@ -42,4 +42,8 @@ while counter == 0:      #starting the loop
     
     else:   #choice closing program
         counter = counter + 1   #ending the loop
+<<<<<<< Updated upstream
         print("Closing program ... ")
+=======
+        print("Closing program ... ")
+>>>>>>> Stashed changes
