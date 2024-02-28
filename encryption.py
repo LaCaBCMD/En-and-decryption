@@ -25,11 +25,13 @@ while counter == 0:      #starting the loop
         textlenght = len(text)
         for y in range(textlenght): #Dividing the text into two lists for better protection
             if y % 2:
-                encrypteven.append(text(y))
+                encrypteven.append(text[y])
             else:
-                encryptodd.append(text(y))
+                encryptodd.append(text[y])
                 
-                
+        print(encryptodd)
+        print(encrypteven)
+            
         
         
         
