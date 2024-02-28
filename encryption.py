@@ -22,7 +22,14 @@ while counter == 0:      #starting the loop
         encryptodd = []
         d1indexmarker = []
         d2indexmarker = []
-        code = int(input("Please enter your password ")) #enter password
+        
+        while True:
+            code = int(input("Please enter your password ")) #enter password.
+            if code >=0 and ValueError = False:   # Only full and positive numbers check. 
+                break       # If full number = exiting loop.
+            else:           # else ask give an error message and ask for an new input.
+                print("Invalid input. Do not use negative numbers ")
+        
         text = list(str(input("Please enter the text you want to encrypt: ")))
         
         for y in range(len(text)): #Dividing the text into two lists for better protection
