@@ -1,10 +1,18 @@
-# TEA23_project
+# TEA23_project 
 
-Creators: 
+#######################
+
+Creators:             
 
 Fabian Wulf
 Nicklas Fischer
 Raphael Boelts
+
+#############################################################################################################################################
+
+English
+
+############
 
 Program for encryption and decryption. 
 
@@ -17,3 +25,22 @@ also entered first and then the sentence to be decrypted. The output is the encr
 
 If the user decides to quit, the program shuts down.
 
+#############################################################################################################################################
+
+German
+
+########
+
+Programm zur Ver- und Entschlüsselung.
+
+Bei der Ausführung des Programms wird der Nutzer aufgefordert zwischen Verschlüsseln, Entschlüsseln und Programm beenden zu wählen.
+
+Im Anschluss der gerade getroffenen Wahl, wird ein Passwort (Wird als Shiftcode genutzt) und eine zu ver- oder entschlüsselnde 
+Eingabe verlangt. 
+
+Das Programm nutzt nun den eingegeben Shiftfaktor (Verschiebungsfaktor), um die Listen mit diesem Faktor zu verschieben. 
+
+In beiden Fällen wird das Ergebnis im Anschluss ausgegeben.
+Sollte der Nutzer sich jedoch dazu entscheiden das Programm direkt zu beenden, so schließt dieses sich von selbst.
+
+##############################################################################################################################################
