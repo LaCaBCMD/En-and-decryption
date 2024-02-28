@@ -18,18 +18,22 @@ while counter == 0:      #starting the loop
     choice = input("encryption (e), decryption (d), close program (any key): ")  
 
     if choice == "e":  #choice encryption 
+        encrypteven = []
+        encryptodd = []
+        d1indexmarker = []
+        d2indexmarker = []
         code = int(input("Please enter your password ")) #enter password
         text = list(str(input("Please enter the text you want to encrypt: ")))
         
-        
-        
-        
-        
-        
-        
-        
-        
-        for i in range(code):
+        for y in range(len(text)): #Dividing the text into two lists for better protection
+            if y % 2:
+                encrypteven.append(text[y])
+            else:
+                encryptodd.append(text[y])
+        for z in range(len(text)/2):    #Creating a list to keep track of the indexes
+            d1indexmarker.append(disk1.index(encrypteven[z]))
+            d2indexmarker.append(disk2.index(encryptodd[z]))
+        for i in range(code):   #Shifting the disks to encrypt the text
             disk1.append(disk1.pop(0))
         for j in range(code^2):
             disk2.append(disk2.pop(0))
