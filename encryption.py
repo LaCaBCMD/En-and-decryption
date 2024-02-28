@@ -36,4 +36,3 @@ while counter == 0:      #starting the loop
     else:   #choice closing program
         counter = counter + 1   #ending the loop
         print("Closing program ... ")
-while
