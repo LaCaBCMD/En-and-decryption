@@ -1,7 +1,6 @@
-### Program for encryption and decryption of Texts
-### Ask whether it should be encrypted or decrypted
-### Program should be executed as a loop
-### General structure of the programm
+##############################################
+### Program for encryption and decryption  ###
+##############################################
 
 counter = 0
 
@@ -79,4 +78,4 @@ while counter == 0:      # Starting the loop
     
     else:   # Choice closing program
         counter = counter + 1   # Ending the loop
-        print("Closing program ... ") # Programm closed
+        print("Closing program ... ") # Program closed
