@@ -18,11 +18,11 @@ while counter == 0:      # Starting the loop
     choice = input("encryption (e), decryption (d), close program (any key): ")  # Choice between encryption, decryption or close programm 
 
     if choice == "e":  #choice encryption 
-        encrypteven = []
-        encryptodd = []
-        d1indexmarker = []
-        d2indexmarker = []
-        encryptedtext = []
+        encrypteven = [] # Even signs from text input
+        encryptodd = [] # Odd signs from text input 
+        d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
+        d2indexmarker = [] # Marks index of disk 2 where disk 2 and index cross
+        encryptedtext = [] # disk where encrypted text goes
         
         while True:
             try:
