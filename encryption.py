@@ -41,14 +41,19 @@ while counter == 0:      #starting the loop
                 encrypteven.append(text[y])
             else:
                 encryptodd.append(text[y])
+        for x in range(textlength3):
+            d1indexmarker.append(disk1.index(encrypteven[x]))         
         for z in range(textlength2):    #Creating a list to keep track of the indexes
             d2indexmarker.append(disk2.index(encryptodd[z]))
-        for x in range(textlength3):
-            d1indexmarker.append(disk1.index(encrypteven[x]))    
         for i in range(code):   #Shifting the disks to encrypt the text
             disk1.append(disk1.pop(0))
         for j in range(code^2):
             disk2.append(disk2.pop(0))
+        for h in range(textlength3):
+            encrypteven[h] = disk1[d1indexmarker[h]]
+        for g in range(textlength2):
+            encryptodd[g] = disk2[d2indexmarker[g]]
+        
         
 
         
