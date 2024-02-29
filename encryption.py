@@ -68,8 +68,8 @@ while counter == 0:      # Starting the loop
             d2indexmarker.append(disk2.index(encryptodd[z])) # Odd signs get pushed in list 2
         for i in range(code):   # Shifting the disks to encrypt the text
             disk1.append(disk1.pop(0)) # Disk 1 gets shifted
-        for j in range(code^2):
-            disk2.append(disk2.pop(0))
+        for j in range(code^2): # Shifting the disks to encrypt the text
+            disk2.append(disk2.pop(0)) # Disk 2 gets shifted
         
         
         
