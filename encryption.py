@@ -18,12 +18,12 @@ while counter == 0:      #starting the loop
     choice = input("encryption (e), decryption (d), close program (any key): ")  
 
     if choice == "e":  #choice encryption 
+        
         encrypteven = []
         encryptodd = []
         d1indexmarker = []
         d2indexmarker = []
         encryptedtext = []
-        
         
         code = int(input("Please enter your password ")) #enter password. 
         code2 = code + code     
@@ -37,10 +37,6 @@ while counter == 0:      #starting the loop
                 encrypteven.append(text[y])
             else:
                 encryptodd.append(text[y])
-                
-        print(encrypteven)
-        print(encryptodd)
-        
         for x in range(textlength3):
             d1indexmarker.append(disk1.index(encrypteven[x]))         
         for z in range(textlength2):    #Creating a list to keep track of the indexes
@@ -49,8 +45,6 @@ while counter == 0:      #starting the loop
             disk1.append(disk1.pop(0))
         for j in range(code2):
             disk2.append(disk2.pop(0))
-        print(disk1)
-        print(disk2)
         for h in range(textlength3):
             encrypteven[h] = disk1[d1indexmarker[h]]
         for g in range(textlength2):
@@ -60,7 +54,10 @@ while counter == 0:      #starting the loop
             encryptedtext.append(encrypteven[f])
         if len(encryptodd)>len(encrypteven):
             encryptedtext.append(encryptodd[len(encryptodd)-1])
-        print(encryptedtext)
+        
+        encryptedtextprint = "".join(encryptedtext)
+         
+        print(encryptedtextprint)
         
         
 
