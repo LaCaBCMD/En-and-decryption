@@ -27,7 +27,7 @@ while counter == 0:      #starting the loop
         while True:
             code = int(input("Please enter your password ")) #enter password.
             if code >=0 and ValueError == False:   # Only full and positive numbers check. #check for letters
-                break       # If full number = exiting loop.
+                break       # If full number = exiting whoop whoop loop!
             else:           # else ask give an error message and ask for an new input.
                 print("Invalid input. Do not use negative numbers ")
         
