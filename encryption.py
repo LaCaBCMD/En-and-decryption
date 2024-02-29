@@ -25,11 +25,14 @@ while counter == 0:      # Starting the loop
         encryptedtext = []
         
         while True:
-            code = int(input("Please enter your password ")) #enter password.
-            if code >=0 and ValueError == False:   # Only full and positive numbers check. #check for letters
-                break       # If full number = exiting loop.
-            else:           # else ask give an error message and ask for an new input.
-                print("Invalid input. Do not use negative numbers ")
+            try:
+                code = int(input("Please enter your password ")) #enter password.
+                if code >=0:     # Only full and positive numbers check.
+                    break        # If full number = exiting loop.
+                else:            # else ask give an error message and ask for an new input.
+                    print("Invalid input. Do not use negative numbers ")
+            except ValueError:   # No letters or floats.
+                    print ("Invalid input. Do not use letters or floats. ")
         
         text = list(str(input("Please enter the text you want to encrypt: ")))
         textlength = len(text)
@@ -67,6 +70,7 @@ while counter == 0:      # Starting the loop
             disk1.append(disk1.pop(0))
         for j in range(code^2):
             disk2.append(disk2.pop(0))
+<<<<<<< Updated upstream
         for h in range(textlength3):
             encrypteven[h] = disk1[d1indexmarker[h]]
         for g in range(textlength2):
@@ -77,6 +81,12 @@ while counter == 0:      # Starting the loop
         
         
         
+=======
+        print(d1indexmarker)    #TestTest
+        print(d2indexmarker)
+        print(disk1)
+        print(disk2)    
+>>>>>>> Stashed changes
 
     elif choice == "d":     # Choice decryption
         code = int(input("Please enter your password ")) # Entering password
