@@ -22,6 +22,7 @@ while counter == 0:      #starting the loop
         encryptodd = []
         d1indexmarker = []
         d2indexmarker = []
+        encryptedtext = []
         
         while True:
             code = int(input("Please enter your password ")) #enter password.
@@ -43,15 +44,12 @@ while counter == 0:      #starting the loop
         for z in range(textlength2):    #Creating a list to keep track of the indexes
             d2indexmarker.append(disk2.index(encryptodd[z]))
         for x in range(textlength3):
-            d1indexmarker.append(disk1.index(encrypteven[x]))
+            d1indexmarker.append(disk1.index(encrypteven[x]))    
         for i in range(code):   #Shifting the disks to encrypt the text
             disk1.append(disk1.pop(0))
         for j in range(code^2):
             disk2.append(disk2.pop(0))
-        print(d1indexmarker)    #TestTest
-        print(d2indexmarker)
-        print(disk1)
-        print(disk2)
+        
 
         
         
