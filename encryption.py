@@ -79,6 +79,7 @@ while counter == 0:      # Starting the loop
         
 
         
+<<<<<<< Updated upstream
         
         
 =======
@@ -88,6 +89,8 @@ while counter == 0:      # Starting the loop
         print(disk2)    
 >>>>>>> Stashed changes
 
+=======
+>>>>>>> Stashed changes
     elif choice == "d":     # Choice decryption
         code = int(input("Please enter your password ")) # Entering password
     
