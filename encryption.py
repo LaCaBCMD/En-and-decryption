@@ -21,10 +21,7 @@ while counter == 0:      # Starting the loop
         encryptodd = [] # Odd signs from text input 
         d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
         d2indexmarker = [] # Marks index of disk 2 where disk 2 and index cross
-        encryptedtext = [] # disk where encrypted text goes
-        
-        
- #######################################################################################################################       
+        encryptedtext = [] # disk where encrypted text goes      
         
         
         while True:     #Please check which loop is the correct one and delete the other one
@@ -36,18 +33,7 @@ while counter == 0:      # Starting the loop
                     print("Invalid input. Do not use negative numbers ")
             except ValueError:   # No letters or floats.
                     print ("Invalid input. Do not use letters or floats. ")
-                    
-                    
-
         
-        while True:     #Please check which loop is the correct one and delete the other one
-            code = int(input("Please enter your password ")) # Enter password
-            if code >=0 and ValueError == False:   # Only full and positive numbers check
-                break       # If full number = exiting loop
-            else:           # Else ask give an error message and ask for an new input
-                print("Invalid input. Do not use negative numbers ")
-                
-########################################################################################################################
         
         code2 = code + code     
         text = list(str(input("Please enter the text you want to encrypt: ")))
@@ -83,11 +69,7 @@ while counter == 0:      # Starting the loop
          
         print(encryptedtextprint)
         
-        
-
-        
-        
-        
+                
 
     elif choice == "d":     # Choice decryption
         code = int(input("Please enter your password ")) # Entering password
