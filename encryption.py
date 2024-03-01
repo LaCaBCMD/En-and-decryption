@@ -16,6 +16,7 @@ while counter == 0:      # Starting the loop
     
     choice = input("encryption (e), decryption (d), close program (any key): ")  # Choice between encryption, decryption or close programm 
 
+
 ###############################################
 ###           encryption                    ###
 ###############################################
@@ -93,7 +94,7 @@ while counter == 0:      # Starting the loop
   
   
         code2 = code + code     
-        text = list(str(input("Please enter the text you want to encrypt: ")))
+        text = list(str(input("Please enter the text you want to decrypt: ")))
         textlength = len(text)
         textlength2 = int(float((textlength/2)+0.5))
         textlength3 = int(textlength/2)
@@ -113,18 +114,18 @@ while counter == 0:      # Starting the loop
         for j in range(code2):
             disk2.append(disk2.pop(0))
         for h in range(textlength3):
-            encrypteven[h] = disk1[d1indexmarker[h]]
+            decrypteven[h] = disk1[d1indexmarker[h]]
         for g in range(textlength2):
-            encryptodd[g] = disk2[d2indexmarker[g]]
+            decryptodd[g] = disk2[d2indexmarker[g]]
         for f in range(textlength3):
-            encryptedtext.append(encryptodd[f])
-            encryptedtext.append(encrypteven[f])
-        if len(encryptodd)>len(encrypteven):
-            encryptedtext.append(encryptodd[len(encryptodd)-1])
+            decryptedtext.append(decryptodd[f])
+            decryptedtext.append(decrypteven[f])
+        if len(decryptodd)>len(decrypteven):
+            decryptedtext.append(decryptodd[len(decryptodd)-1])
         
-        encryptedtextprint = "".join(encryptedtext)
+        decryptedtextprint = "".join(decryptedtext)
          
-        print(encryptedtextprint)  
+        print(decryptedtextprint)  
  
  
 ###############################################
