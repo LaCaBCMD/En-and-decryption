@@ -16,6 +16,10 @@ while counter == 0:      # Starting the loop
     
     choice = input("encryption (e), decryption (d), close program (any key): ")  # Choice between encryption, decryption or close programm 
 
+###############################################
+###           encryption                    ###
+###############################################
+
     if choice == "e":  #choice encryption 
         encrypteven = [] # Even signs from text input
         encryptodd = [] # Odd signs from text input 
@@ -26,7 +30,7 @@ while counter == 0:      # Starting the loop
         
         while True:     #Please check which loop is the correct one and delete the other one
             try:
-                code = int(input("Please enter your password ")) #enter password.
+                code = int(input("Please enter your shiftcode ")) #enter shiftcode/factor.
                 if code >=0:     # Only full and positive numbers check.
                     break        # If full number = exiting loop.
                 else:            # else ask give an error message and ask for an new input.
@@ -69,10 +73,64 @@ while counter == 0:      # Starting the loop
          
         print(encryptedtextprint)
         
-                
+        
+###############################################
+###           decryption                    ###
+###############################################
+
 
     elif choice == "d":     # Choice decryption
-        code = int(input("Please enter your password ")) # Entering password
+  
+        while True:     #Please check which loop is the correct one and delete the other one
+            try:
+                code = int(input("Please enter your shiftcode ")) #enter shiftcode/factor.
+                if code >=0:     # Only full and positive numbers check.
+                    break        # If full number = exiting loop.
+                else:            # else ask give an error message and ask for an new input.
+                    print("Invalid input. Do not use negative numbers ")
+            except ValueError:   # No letters or floats.
+                    print ("Invalid input. Do not use letters or floats. ")
+  
+  
+        code2 = code + code     
+        text = list(str(input("Please enter the text you want to encrypt: ")))
+        textlength = len(text)
+        textlength2 = int(float((textlength/2)+0.5))
+        textlength3 = int(textlength/2)
+                
+
+        for y in range(len(text)): #Dividing the text into two lists for better protection
+            if y % 2:
+                encrypteven.append(text[y])
+            else:
+                encryptodd.append(text[y])
+        for x in range(textlength3):
+            d1indexmarker.append(disk1.index(encrypteven[x]))         
+        for z in range(textlength2):    #Creating a list to keep track of the indexes
+            d2indexmarker.append(disk2.index(encryptodd[z]))
+        for i in range(code):   #Shifting the disks to encrypt the text
+            disk1.append(disk1.pop(0))
+        for j in range(code2):
+            disk2.append(disk2.pop(0))
+        for h in range(textlength3):
+            encrypteven[h] = disk1[d1indexmarker[h]]
+        for g in range(textlength2):
+            encryptodd[g] = disk2[d2indexmarker[g]]
+        for f in range(textlength3):
+            encryptedtext.append(encryptodd[f])
+            encryptedtext.append(encrypteven[f])
+        if len(encryptodd)>len(encrypteven):
+            encryptedtext.append(encryptodd[len(encryptodd)-1])
+        
+        encryptedtextprint = "".join(encryptedtext)
+         
+        print(encryptedtextprint)  
+ 
+ 
+###############################################
+###           close program                 ###
+###############################################
+    
     
     else:   # Choice closing program
         counter = counter + 1   # Ending the loop
