@@ -1,7 +1,6 @@
-### Program for encryption and decryption of Texts
-### Ask whether it should be encrypted or decrypted
-### Program should be executed as a loop
-### General structure of the programm
+##############################################
+### Program for encryption and decryption  ###
+##############################################
 
 counter = 0
 
@@ -18,11 +17,11 @@ while counter == 0:      # Starting the loop
     choice = input("encryption (e), decryption (d), close program (any key): ")  # Choice between encryption, decryption or close programm 
 
     if choice == "e":  #choice encryption 
-        encrypteven = []
-        encryptodd = []
-        d1indexmarker = []
-        d2indexmarker = []
-        encryptedtext = []
+        encrypteven = [] # Even signs from text input
+        encryptodd = [] # Odd signs from text input 
+        d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
+        d2indexmarker = [] # Marks index of disk 2 where disk 2 and index cross
+        encryptedtext = [] # disk where encrypted text goes
         
         while True:
             try:
@@ -64,30 +63,16 @@ while counter == 0:      # Starting the loop
         for z in range(textlength2):    #Creating a list to keep track of the indexes
                 encryptodd.append(text[y]) # Odd signs in text input
         for z in range(len(text)/2):    # Creating a list to keep track of the indexes
-            d1indexmarker.append(disk1.index(encrypteven[z])) 
-            d2indexmarker.append(disk2.index(encryptodd[z]))
+            d1indexmarker.append(disk1.index(encrypteven[z])) #  Even signs get pushed in list 1
+            d2indexmarker.append(disk2.index(encryptodd[z])) # Odd signs get pushed in list 2
         for i in range(code):   # Shifting the disks to encrypt the text
-            disk1.append(disk1.pop(0))
-        for j in range(code^2):
-            disk2.append(disk2.pop(0))
-<<<<<<< Updated upstream
-        for h in range(textlength3):
-            encrypteven[h] = disk1[d1indexmarker[h]]
-        for g in range(textlength2):
-            encryptodd[g] = disk2[d2indexmarker[g]]
-        
-        
-
+            disk1.append(disk1.pop(0)) # Disk 1 gets shifted
+        for j in range(code^2): # Shifting the disks to encrypt the text
+            disk2.append(disk2.pop(0)) # Disk 2 gets shifted
         
 <<<<<<< Updated upstream
         
         
-=======
-        print(d1indexmarker)    #TestTest
-        print(d2indexmarker)
-        print(disk1)
-        print(disk2)    
->>>>>>> Stashed changes
 
 =======
 >>>>>>> Stashed changes
@@ -96,4 +81,4 @@ while counter == 0:      # Starting the loop
     
     else:   # Choice closing program
         counter = counter + 1   # Ending the loop
-        print("Closing program ... ") # Programm closed
+        print("Closing program ... ") # Program closed
