@@ -23,7 +23,11 @@ while counter == 0:      # Starting the loop
         d2indexmarker = [] # Marks index of disk 2 where disk 2 and index cross
         encryptedtext = [] # disk where encrypted text goes
         
-        while True:
+        
+        
+        
+        
+        while True:     #Please check which loop is the correct one and delete the other one
             try:
                 code = int(input("Please enter your password ")) #enter password.
                 if code >=0:     # Only full and positive numbers check.
@@ -32,24 +36,32 @@ while counter == 0:      # Starting the loop
                     print("Invalid input. Do not use negative numbers ")
             except ValueError:   # No letters or floats.
                     print ("Invalid input. Do not use letters or floats. ")
-        
+                    
+                    
+                    
+                    
+                    
+        code2 = code + code     
         text = list(str(input("Please enter the text you want to encrypt: ")))
         textlength = len(text)
         textlength2 = int(float((textlength/2)+0.5))
         textlength3 = int(textlength/2)
-
-    if choice == "e":  # Choice encryption 
-        encrypteven = [] # Even signs from text input 
-        encryptodd = [] # Odd signs from text input 
-        d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
-        d2indexmarker = [] # Marks index of disk 2 where disk 2 and index cross
         
-        while True:
+        
+        
+        
+        
+        while True:     #Please check which loop is the correct one and delete the other one
             code = int(input("Please enter your password ")) # Enter password
             if code >=0 and ValueError == False:   # Only full and positive numbers check
                 break       # If full number = exiting loop
             else:           # Else ask give an error message and ask for an new input
                 print("Invalid input. Do not use negative numbers ")
+                
+                
+                
+                
+                
         
         text = list(str(input("Please enter the text you want to encrypt: "))) # Entering your selected text
         
@@ -69,6 +81,27 @@ while counter == 0:      # Starting the loop
             disk1.append(disk1.pop(0)) # Disk 1 gets shifted
         for j in range(code^2): # Shifting the disks to encrypt the text
             disk2.append(disk2.pop(0)) # Disk 2 gets shifted
+            d2indexmarker.append(disk2.index(encryptodd[z]))
+        for i in range(code):   #Shifting the disks to encrypt the text
+            disk1.append(disk1.pop(0))
+        for j in range(code2):
+            disk2.append(disk2.pop(0))
+        for h in range(textlength3):
+            encrypteven[h] = disk1[d1indexmarker[h]]
+        for g in range(textlength2):
+            encryptodd[g] = disk2[d2indexmarker[g]]
+        for f in range(textlength3):
+            encryptedtext.append(encryptodd[f])
+            encryptedtext.append(encrypteven[f])
+        if len(encryptodd)>len(encrypteven):
+            encryptedtext.append(encryptodd[len(encryptodd)-1])
+        
+        encryptedtextprint = "".join(encryptedtext)
+         
+        print(encryptedtextprint)
+        
+        
+
         
         
         
