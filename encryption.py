@@ -12,7 +12,7 @@ disk1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
          "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "] # Disk 1
 
 disk2 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
-         "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", 
+         "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
          "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", 
          "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
          "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", 
@@ -27,7 +27,7 @@ while True:
                     print("Invalid input. Do not use negative numbers ")
             except ValueError:   # No letters or floats.
                     print ("Invalid input. Do not use letters or floats. ")
-code2 = code * code
+code2 = (code * code) + 7
 
 
 while counter == 0: # Starting the loop
