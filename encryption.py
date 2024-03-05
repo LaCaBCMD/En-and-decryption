@@ -172,5 +172,5 @@ while counter1 == 0: # Starting the loop
 ###############################################
         
     else:                             # Choice closing program
-        counter1 = counter1 + 1         # Ending the loop
+        counter1 = counter1 + 1       # Ending the loop
         print("Closing program ... ") # Program closed
