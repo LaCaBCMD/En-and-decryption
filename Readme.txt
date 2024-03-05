@@ -14,16 +14,28 @@ English
 
 ############
 
-Program for encryption and decryption. 
+Program for encryption and decryption.
 
-At the beginning the user acesses a menu where he has to make the first choice between encrypting, decrypting or exiting the program. 
 
-After this he/she/it has to enter a passwort which is used as an shiftcode (code which says how the variables get shifted)
+When running the program, the user is prompted to choose between "Encrypt", "Decrypt" and "Close program".
 
-The sentence is shifted with the respective factor and is output. When selecting decryption, the password is 
-also entered first and then the sentence to be decrypted. The output is the encrypted or decrypted text. 
+Following the selection just made, a shift code and an entry to be encrypted or decrypted are requested. 
 
-If the user decides to quit, the program shuts down.
+The program now uses the entered shift factor to shift the lists with this factor. 
+
+The user's input is saved in a list (encrypted or decrypted text). There depending on the position of the letters / spaces 
+(whether even or odd) is divided into two lists. List 1 (odd positions) is shiftet by the shiftfactor during encryption. 
+List 2 (even positions) is shifted by the shiftfactor (squared + 7) during encryption.
+
+If the user decides to exit the program directly, it closes automatically. (Pressing any key except of e or d )
+
+When decrypting, the lists are reversed and shifted.
+
+All letters in upper and lower case are permitted as input as well as numbers from 0-9 and . ! spaces and question marks. 
+
+Not supported are (ä,ü,ö,symbols and commas). 
+
+The result of the encryption or decryption is output at the end of the process.
 
 #############################################################################################################################################
 
@@ -33,14 +45,25 @@ German
 
 Programm zur Ver- und Entschlüsselung.
 
-Bei der Ausführung des Programms wird der Nutzer aufgefordert zwischen Verschlüsseln, Entschlüsseln und Programm beenden zu wählen.
 
-Im Anschluss der gerade getroffenen Wahl, wird ein Passwort (Wird als Shiftcode genutzt) und eine zu ver- oder entschlüsselnde 
-Eingabe verlangt. 
+Bei der Ausführung des Programms wird der Nutzer aufgefordert zwischen "Verschlüsseln", "Entschlüsseln" und "Programm beenden" zu wählen.
+
+Im Anschluss der gerade getroffenen Wahl, wird ein Shiftcode und eine zu ver- oder entschlüsselnde Eingabe verlangt. 
 
 Das Programm nutzt nun den eingegeben Shiftfaktor (Verschiebungsfaktor), um die Listen mit diesem Faktor zu verschieben. 
 
-In beiden Fällen wird das Ergebnis im Anschluss ausgegeben.
+Die Eingabe des Nutzers wird in einer Liste (encrypted- oder decryptedtext) gespeichert. Dort wird abhängig von der Position der Buchstaben / Leerzeichen 
+(ob gerade oder ungerade) in zwei Listen eingeteilt. Liste 1 (ungerade Positionen) wird dann beim Verschlüsseln um den Shiftfaktor verschoben. 
+Liste 2 (gerade Positionen) wird beim Verschlüsseln um den Shiftfaktor zum Quadrat + 7 verschoben.
+
 Sollte der Nutzer sich jedoch dazu entscheiden das Programm direkt zu beenden, so schließt dieses sich von selbst.
+
+Beim Entschlüsseln werden die Listen gedreht und verschoben.
+
+Als Eingabe sind alle Buchstaben in Groß- und Kleinschrift erlaubt, sowie Zahlen von 0-9 und . ! Leerzeichen Fragezeichen. 
+
+Nicht unterstützt werden die Umlaute und das Komma. 
+
+Das Ergebnis der Ver- oder Entschlüsselung wird im Anschluss des Prozesses ausgegeben.
 
 ##############################################################################################################################################
