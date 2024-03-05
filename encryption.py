@@ -143,7 +143,7 @@ while counter1 == 0: # Starting the loop
         for k in range(textlength2):    # Creating a list to keep track of the indexes
             d2indexmarker.append(disk2.index(oddelements[k]))
             
-        for l in range(code):       # Shifting the disk-lists to decrypt the text
+        for l in range(code):           # Shifting the disk-lists to decrypt the text
             disk1.append(disk1.pop(0))
             
         for m in range(code2):
