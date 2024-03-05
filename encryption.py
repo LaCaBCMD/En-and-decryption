@@ -112,7 +112,7 @@ while counter1 == 0: # Starting the loop
          
         
         while counter2 == 0:
-            encryptedtext = list(str(input("Please enter the text you want to encrypt: "))) # Enter text
+            encryptedtext = list(str(input("Please enter the text you want to decrypt: "))) # Enter text
             comp = len(list(set(encryptedtext) - set(disk1)))   # Creating a variable that indicates how many different characters are not suppurtet
             if comp == 0:
                 counter2 = counter2 + 1 # Exiting loop
