@@ -17,7 +17,7 @@ English
 Program for encryption and decryption.
 
 
-When running the program, the user is prompted to select a shiftcode
+When running the program, the user is prompted to select a shiftcode.
 
 Following the selection just made, the user will choose between "Encrypt", "Decrypt" and "Close program".
 
