@@ -51,15 +51,15 @@ while counter1 == 0: # Starting the loop
   
         
         while counter2 == 0:
-            unencryptedtext = list(str(input("Please enter the text you want to encrypt: ")))
-            comp = len(list(set(unencryptedtext) - set(disk1)))
+            unencryptedtext = list(str(input("Please enter the text you want to encrypt: ")))   # Enter text
+            comp = len(list(set(unencryptedtext) - set(disk1))) # Creating a variable that indicates how many different characters are not suppurtet
             if comp == 0:
-                counter2 = counter2 + 1
-            elif comp > 1:
+                counter2 = counter2 + 1 # Exiting Loop
+            elif comp > 1:  # If there are multiple different characters, the user will get that information 
                 print("Your text contains", comp, "unsupportet characters, please adjust your text!")
-            else:
+            else:   # If there is only one different character, the user will get that information
                 print("Your text contains one unsupportet character, please adjust your text!")
-        counter2 = 0
+        counter2 = 0    # Setting the counter back to reingage the loop
         
         
         encryptedtext = [] # Disk where encrypted text goes
@@ -112,15 +112,15 @@ while counter1 == 0: # Starting the loop
          
         
         while counter2 == 0:
-            encryptedtext = list(str(input("Please enter the text you want to encrypt: ")))
-            comp = len(list(set(encryptedtext) - set(disk1)))
+            encryptedtext = list(str(input("Please enter the text you want to encrypt: "))) # Enter text
+            comp = len(list(set(encryptedtext) - set(disk1)))   # Creating a variable that indicates how many different characters are not suppurtet
             if comp == 0:
-                counter2 = counter2 + 1
-            elif comp > 1:
+                counter2 = counter2 + 1 # Exiting loop
+            elif comp > 1:  # If there are multiple different characters, the user will get that information 
                 print("Your text contains", comp, "unsupportet characters, meaning this programm probably didnt encrypt it!")
-            else:
+            else:   # If there is only one different character, the user will get that information
                 print("Your text contains one unsupportet character, meaning this programm probably didnt encrypt it!")
-        counter2 = 0
+        counter2 = 0    # Setting the counter back to reingage the loop
         
          
         unencryptedtext = [] # List where the decrypted text goes
