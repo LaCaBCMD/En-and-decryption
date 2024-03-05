@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="630846033AFDDF19">
+  <PROJECT FORMAT="1.00" NAME="Informatik Programm" AUTHOR="FischerNi" CREATED="2024.03.04 21:19:07" MODIFIED="2024.03.05 12:55:05">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Ver- und Entschlüsselung" CREATED="2024.03.04 21:19:16" MODIFIED="2024.03.05 12:55:05">
+        <LAYOUT FORMAT="1.00" COLUMNS="4" ROWS="10">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ver- und Entschlüsselung]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[User acces menu]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Encryption]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[Required entry of shift factor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="33">
+                <TEXT><![CDATA[Program requires text input for encryption]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="49">
+                <TEXT><![CDATA[Output of the text input shifted with the shift factor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="187">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Decription]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="35">
+                <TEXT><![CDATA[Required entry of shift factor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="48">
+                <TEXT><![CDATA[Program requires text input for decryption]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="53">
+                <TEXT><![CDATA[Output of the text input shifted with the shift factor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="177">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="38">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="9">
+                <TEXT><![CDATA[Closing programm]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="83">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="161">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="27" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="37" FROM="6" TO="31" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="14" FROM="6" TO="8" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="16" FROM="8" TO="9" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="9" TO="38" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="27" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="44" FROM="38" TO="27" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="31" TO="33" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="34" FROM="33" TO="49" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="45" FROM="8" TO="35" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="47" FROM="35" TO="48" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="54" FROM="48" TO="53" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="193" FROM="187" TO="177" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="192" FROM="177" TO="161" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="109" FROM="53" TO="177" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="85" FROM="83" TO="38" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="163" FROM="161" TO="83" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="112" FROM="49" TO="187" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
