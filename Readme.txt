@@ -19,9 +19,7 @@ Program for encryption and decryption.
 
 When running the program, the user is prompted to choose between "Encrypt", "Decrypt" and "Close program".
 
-Following the selection just made, a shift code and an entry to be encrypted or decrypted are requested. 
-
-The program now uses the entered shift factor to shift the lists with this factor. 
+Following the selection just made, a shiftcode and an entry to be encrypted or decrypted are requested.  
 
 The user's input is saved in a list (encrypted or decrypted text). There depending on the position of the letters / spaces 
 (whether even or odd) is divided into two lists. List 1 (odd positions) is shiftet by the shiftfactor during encryption. 
@@ -49,8 +47,6 @@ Programm zur Ver- und Entschlüsselung.
 Bei der Ausführung des Programms wird der Nutzer aufgefordert zwischen "Verschlüsseln", "Entschlüsseln" und "Programm beenden" zu wählen.
 
 Im Anschluss der gerade getroffenen Wahl, wird ein Shiftcode und eine zu ver- oder entschlüsselnde Eingabe verlangt. 
-
-Das Programm nutzt nun den eingegeben Shiftfaktor (Verschiebungsfaktor), um die Listen mit diesem Faktor zu verschieben. 
 
 Die Eingabe des Nutzers wird in einer Liste (encrypted- oder decryptedtext) gespeichert. Dort wird abhängig von der Position der Buchstaben / Leerzeichen 
 (ob gerade oder ungerade) in zwei Listen eingeteilt. Liste 1 (ungerade Positionen) wird dann beim Verschlüsseln um den Shiftfaktor verschoben. 
