@@ -108,7 +108,7 @@ while counter1 == 0: # Starting the loop
 ###           decryption                    ###
 ###############################################
 
-    elif choice == "d":     # Choice decryption
+    elif choice == "d":      # Choice decryption
          
         
         while counter2 == 0:
