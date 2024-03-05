@@ -27,7 +27,7 @@ while True:
                     print("Invalid input. Do not use negative numbers ")
             except ValueError:   # No letters or floats.
                     print ("Invalid input. Do not use letters or floats. ")
-code2 = (code * code) + 7
+code2 = (code * code) + 7   #Setting the shift factor for disk 2
 
 
 while counter == 0: # Starting the loop
@@ -51,7 +51,7 @@ while counter == 0: # Starting the loop
         
         encryptedtext = [] # disk where encrypted text goes      
         unencryptedtext = list(str(input("Please enter the text you want to encrypt: ")))
-        textlength = len(unencryptedtext)
+        textlength = len(unencryptedtext)   #Setting diffrent ranges for the for-loops to de-/rearrange the text
         textlength2 = int(float((textlength/2)+0.5))
         textlength3 = int(textlength/2)
                 
