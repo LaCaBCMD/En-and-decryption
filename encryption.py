@@ -30,7 +30,7 @@ while True:
                     
 code2 = (code * code) + 7
 
-while counter == 0: # Starting the loop
+while counter == 0:    # Starting the loop
     
        
     d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
@@ -96,7 +96,7 @@ while counter == 0: # Starting the loop
 ###           decryption                    ###
 ###############################################
 
-    elif choice == "d":     # Choice decryption
+    elif choice == "d":      # Choice decryption
          
         encryptedtext = list(str(input("Please enter the text you want to decrypt: ")))
         unencryptedtext = [] # List where the decrypted text goes
@@ -119,7 +119,7 @@ while counter == 0: # Starting the loop
         for z in range(textlength2):    # Creating a list to keep track of the indexes
             d2indexmarker.append(disk2.index(oddelements[z]))
             
-        for i in range(code):       # Shifting the disk-lists to decrypt the text
+        for i in range(code):           # Shifting the disk-lists to decrypt the text
             disk1.append(disk1.pop(0))
             
         for j in range(code2):
