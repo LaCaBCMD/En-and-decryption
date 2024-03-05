@@ -2,7 +2,8 @@
 ### Program for encryption and decryption  ###
 ##############################################
 
-counter = 0
+counter1 = 0
+counter2 = 0
 
 disk1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
          "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", 
@@ -30,7 +31,7 @@ while True:
                     
 code2 = (code * code) + 7
 
-while counter == 0: # Starting the loop
+while counter1 == 0: # Starting the loop
     
        
     d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
@@ -46,43 +47,54 @@ while counter == 0: # Starting the loop
 ###           encryption                    ###
 ###############################################
 
-    if choice == "e":  # Choice encryption 
+    if choice == "e":   # Choice encryption 
+  
+        
+        while counter2 == 0:
+            unencryptedtext = list(str(input("Please enter the text you want to encrypt: ")))
+            comp = len(list(set(unencryptedtext) - set(disk1)))
+            if comp == 0:
+                counter2 = counter2 + 1
+            elif comp > 1:
+                print("Your text contains", comp, "unsupportet characters, please adjust your text!")
+            else:
+                print("Your text contains one unsupportet character, please adjust your text!")
+        counter2 = 0
         
         
-        encryptedtext = [] # Disk where encrypted text goes      
-        unencryptedtext = list(str(input("Please enter the text you want to encrypt: ")))
+        encryptedtext = [] # Disk where encrypted text goes
         textlength = len(unencryptedtext)
         textlength2 = int(float((textlength/2)+0.5))
         textlength3 = int(textlength/2)
                 
 
-        for y in range(textlength): # Dividing the text into two lists for better protection
-            if y % 2:
-                evenelements.append(unencryptedtext[y])
+        for i in range(textlength): # Dividing the text into two lists for better protection
+            if i % 2:
+                evenelements.append(unencryptedtext[i])
             else:
-                oddelements.append(unencryptedtext[y])
+                oddelements.append(unencryptedtext[i])
                 
-        for x in range(textlength3):
-            d1indexmarker.append(disk1.index(evenelements[x]))
+        for j in range(textlength3):
+            d1indexmarker.append(disk1.index(evenelements[j]))
                      
-        for z in range(textlength2):    # Creating a list to keep track of the indexes
-            d2indexmarker.append(disk2.index(oddelements[z]))
+        for k in range(textlength2):    # Creating a list to keep track of the indexes
+            d2indexmarker.append(disk2.index(oddelements[k]))
             
-        for i in range(code):   # Shifting the disks to encrypt the text
+        for l in range(code):   # Shifting the disks to encrypt the text
             disk1.append(disk1.pop(0))
             
-        for j in range(code2):
+        for m in range(code2):
             disk2.append(disk2.pop(0))
             
-        for h in range(textlength3):
-            evenelements[h] = disk1[d1indexmarker[h]]
+        for n in range(textlength3):
+            evenelements[n] = disk1[d1indexmarker[n]]
             
-        for g in range(textlength2):
-            oddelements[g] = disk2[d2indexmarker[g]]
+        for o in range(textlength2):
+            oddelements[o] = disk2[d2indexmarker[o]]
             
-        for f in range(textlength3):
-            encryptedtext.append(oddelements[f])
-            encryptedtext.append(evenelements[f])
+        for p in range(textlength3):
+            encryptedtext.append(oddelements[p])
+            encryptedtext.append(evenelements[p])
             
         if len(oddelements)>len(evenelements):
             encryptedtext.append(oddelements[len(oddelements)-1])
@@ -98,7 +110,19 @@ while counter == 0: # Starting the loop
 
     elif choice == "d":     # Choice decryption
          
-        encryptedtext = list(str(input("Please enter the text you want to decrypt: ")))
+        
+        while counter2 == 0:
+            encryptedtext = list(str(input("Please enter the text you want to encrypt: ")))
+            comp = len(list(set(encryptedtext) - set(disk1)))
+            if comp == 0:
+                counter2 = counter2 + 1
+            elif comp > 1:
+                print("Your text contains", comp, "unsupportet characters, meaning this programm probably didnt encrypt it!")
+            else:
+                print("Your text contains one unsupportet character, meaning this programm probably didnt encrypt it!")
+        counter2 = 0
+        
+         
         unencryptedtext = [] # List where the decrypted text goes
         textlength = len(encryptedtext)
         textlength2 = int(float((textlength/2)+0.5))
@@ -107,33 +131,33 @@ while counter == 0: # Starting the loop
         disk2.reverse()
                         
 
-        for y in range(textlength):     # Dividing the encryptedtext into two lists
-            if y % 2:
-                evenelements.append(encryptedtext[y])
+        for i in range(textlength):     # Dividing the encryptedtext into two lists
+            if i % 2:
+                evenelements.append(encryptedtext[i])
             else:
-                oddelements.append(encryptedtext[y])
+                oddelements.append(encryptedtext[i])
                 
-        for x in range(textlength3):
-            d1indexmarker.append(disk1.index(evenelements[x]))
+        for j in range(textlength3):
+            d1indexmarker.append(disk1.index(evenelements[j]))
                      
-        for z in range(textlength2):    # Creating a list to keep track of the indexes
-            d2indexmarker.append(disk2.index(oddelements[z]))
+        for k in range(textlength2):    # Creating a list to keep track of the indexes
+            d2indexmarker.append(disk2.index(oddelements[k]))
             
-        for i in range(code):       # Shifting the disk-lists to decrypt the text
+        for l in range(code):       # Shifting the disk-lists to decrypt the text
             disk1.append(disk1.pop(0))
             
-        for j in range(code2):
+        for m in range(code2):
             disk2.append(disk2.pop(0))
             
-        for h in range(textlength3):    # Placing the shifted elements back into the even-/oddelements lists
-            evenelements[h] = disk1[d1indexmarker[h]]
+        for n in range(textlength3):    # Placing the shifted elements back into the even-/oddelements lists
+            evenelements[n] = disk1[d1indexmarker[n]]
             
-        for g in range(textlength2):
-            oddelements[g] = disk2[d2indexmarker[g]]
+        for o in range(textlength2):
+            oddelements[o] = disk2[d2indexmarker[o]]
             
-        for f in range(textlength3):    # Putting the decrypted text together using the shifted even-/oddelements lists
-            unencryptedtext.append(oddelements[f])
-            unencryptedtext.append(evenelements[f])
+        for p in range(textlength3):    # Putting the decrypted text together using the shifted even-/oddelements lists
+            unencryptedtext.append(oddelements[p])
+            unencryptedtext.append(evenelements[p])
             
         if len(oddelements)>len(evenelements):  # Adding the last element in case there are more odd than even elements
             unencryptedtext.append(oddelements[len(oddelements)-1])
@@ -148,5 +172,5 @@ while counter == 0: # Starting the loop
 ###############################################
         
     else:                             # Choice closing program
-        counter = counter + 1         # Ending the loop
+        counter1 = counter1 + 1         # Ending the loop
         print("Closing program ... ") # Program closed
