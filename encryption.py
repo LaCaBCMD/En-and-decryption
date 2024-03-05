@@ -27,8 +27,8 @@ while True:
                     print("Invalid input. Do not use negative numbers ")
             except ValueError:   # No letters, floats or symbols.
                     print ("Invalid input. Do not use letters, floats or symbols. ")
+                    
 code2 = (code * code) + 7
-
 
 while counter == 0: # Starting the loop
     
@@ -96,9 +96,7 @@ while counter == 0: # Starting the loop
 ###           decryption                    ###
 ###############################################
 
-
     elif choice == "d":     # Choice decryption
-  
          
         encryptedtext = list(str(input("Please enter the text you want to decrypt: ")))
         unencryptedtext = [] # List where the decrypted text goes
@@ -148,8 +146,7 @@ while counter == 0: # Starting the loop
 ###############################################
 ###           close program                 ###
 ###############################################
-    
-    
+        
     else:                             # Choice closing program
         counter = counter + 1         # Ending the loop
         print("Closing program ... ") # Program closed
