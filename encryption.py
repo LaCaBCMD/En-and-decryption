@@ -5,20 +5,6 @@
 counter1 = 0
 counter2 = 0
 
-disk1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
-         "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", 
-         "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", 
-         "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
-         "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", 
-         "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "] # Disk 1
-
-disk2 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
-         "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
-         "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", 
-         "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
-         "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", 
-         "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "] # Disk 2
-
 while True:
             try:
                 code = int(input("Please enter your shiftcode ")) # Enter shiftcode/factor.
@@ -33,7 +19,21 @@ code2 = (code * code) + 7
 
 while counter1 == 0: # Starting the loop
     
-       
+    
+    disk1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
+             "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", 
+             "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", 
+             "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
+             "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", 
+             "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "] # Disk 1
+
+    disk2 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
+             "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
+             "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", 
+             "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
+             "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", 
+             "4", "5", "6", "7", "8", "9", "0", ".", "!", "?", " "] # Disk 2
+    
     d1indexmarker = [] # Marks index of disk 1 where disk 1 and index cross
     d2indexmarker = [] # Marks index of disk 2 where disk 2 and index cross
     evenelements = []  # Even signs from text input
