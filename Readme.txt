@@ -1,13 +1,3 @@
-# TEA23_project 
-
-#######################
-
-Creators:             
-
-Fabian Wulf
-Nicklas Fischer
-Raphael Boelts
-
 #############################################################################################################################################
 
 English
@@ -66,12 +56,3 @@ Nicht unterstützt werden die Umlaute und das Komma.
 Das Ergebnis der Ver- oder Entschlüsselung wird im Anschluss des Prozesses ausgegeben.
 
 ##############################################################################################################################################
-
-Quellen
-
-############
-
-Skript T3ELG10008.2 Informatik 1 Labor
-Lehrbuch/Praxisbuch: Python 3 ISBN: 978-3-95845-791-1
-        (Befehle wie reverse, .index,.join, break, try )
-Pap-Designer (Grafischer Verlauf)
